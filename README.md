@@ -5,7 +5,7 @@
 1. Buka Text Editor
 2. Masuk ke folder soal1
 3. Buka index.html
-4. Klik kanan pilih 'Open with Live Server' (Harus terinstall Ekstensi Live Server )
+4. Klik kanan pilih 'Open with Live Server' ( Harus terinstall Ekstensi Live Server )
 
 ## Soal 2
 
@@ -29,7 +29,7 @@
     - Mengambil data pengguna dengan berdasarkan id
   - Post /user:
     - Membuat data pengguna
-    - Contoh body yang dapt diterima : {
+    - Contoh body yang dapat diterima : {
       "name": "Cakra Kusuma",
       "email": "<cakra@gmail.com>"
       "password": "inipassword123"
