@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #e5edff;
+  /* --white-color: #faf9f6; */
+  --secondary-color: #630fff;
+  --danger: #e9382c;
+  --success: #039e0a;
+  --white-color: #f6fafa;
+  --black-color: #131314;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: var(--white-color);
+  width: 45%;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--black-color);
+  border-radius: 4px;
+  box-shadow: -8px 8px 0 var(--black-color);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-field,
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.input-wrapper input {
+  padding: 0.6rem 0.4rem;
+  background-color: white;
+}
+
+.default-border {
+  background-color: white;
+  border: 1px solid var(--black-color);
+  border-radius: 3px;
+}
+
+.password-wrapper {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.password-wrapper img {
+  position: absolute;
+  max-width: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.password-wrapper img:hover {
+  cursor: pointer;
+}
+
+label span,
+p span {
+  color: var(--danger);
+}
+
+form button {
+  padding: 0.8rem 0rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in;
+}
+
+form button:hover {
+  cursor: pointer;
+  box-shadow: -5px 5px 0 var(--black-color);
+  translate: 3px -3px;
+}
+
+label {
+  font-size: 16px;
+}
+
+/* Validation styling */
+
+.text-danger {
+  color: var(--danger);
+}
+
+.border-danger {
+  border: 1px solid var(--danger);
+}
+
+.text-success {
+  color: var(--success);
+  text-align: center;
+}
+
+/* Responsive Tablet */
+@media (max-width: 768px) {
+  .content {
+    width: 60%;
+    padding: 2rem 3rem;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p,
+  label,
+  form button {
+    font-size: 14px;
+  }
+
+  .password-wrapper img {
+    max-width: 1rem;
+  }
+}
+
+/* Responsive Mobile*/
+
+@media (max-width: 425px) {
+  .content {
+    width: 80%;
+    padding: 0.8rem 1rem;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  p,
+  label,
+  form button {
+    font-size: 12px;
+  }
+
+  .password-wrapper img {
+    max-width: 1rem;
+  }
+}

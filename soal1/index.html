@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Soal 1</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <h1>Registrasi Pengguna</h1>
+        <p><span>*</span> Wajib terisi</p>
+        <form>
+          <div class="input-field">
+            <div class="input-wrapper">
+              <label for="nama">Nama Lengkap</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="default-border"
+              />
+            </div>
+          </div>
+          <div class="input-field">
+            <div class="input-wrapper">
+              <label for="email">Email<span>*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="default-border"
+              />
+            </div>
+          </div>
+          <div class="input-field">
+            <div class="input-wrapper">
+              <label for="password1">Password<span>*</span></label>
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  name="password1"
+                  id="password1"
+                  class="default-border"
+                />
+                <img class="toggle-show" src="./img/view.png" alt="" />
+              </div>
+              <!-- <button type="button" class="show">show</button> -->
+            </div>
+          </div>
+          <div class="input-field">
+            <div class="input-wrapper">
+              <label for="password2">Konfirmasi Password<span>*</span></label>
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  class="default-border"
+                />
+                <img class="toggle-show" src="./img/view.png" alt="" />
+              </div>
+              <!-- <button type="button" class="show">show</button> -->
+            </div>
+          </div>
+
+          <button type="submit" id="submit">Kirim</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
